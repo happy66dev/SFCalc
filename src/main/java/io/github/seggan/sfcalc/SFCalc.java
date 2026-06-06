@@ -3,7 +3,6 @@ package io.github.seggan.sfcalc;
 import io.github.seggan.errorreporter.ErrorReporter;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
-import net.guizhanss.guizhanlibplugin.updater.GuizhanUpdater;
 import lombok.Getter;
 import org.bukkit.command.TabExecutor;
 import org.bukkit.event.Listener;
@@ -34,10 +33,6 @@ public class SFCalc extends JavaPlugin implements Listener {
             getLogger().log(Level.SEVERE, "从此处下载: https://50l.cc/gzlib");
             getServer().getPluginManager().disablePlugin(this);
             return;
-        }
-
-        if (getConfig().getBoolean("auto-updates") && getDescription().getVersion().startsWith("Build")) {
-            GuizhanUpdater.start(this, getFile(), "SlimefunGuguProject", "SFCalc", "master");
         }
 
         REPORTER = new ErrorReporter("Seggan", "SFCalc", () ->
