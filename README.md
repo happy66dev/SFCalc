@@ -1,4 +1,4 @@
-# SFCalc 粘液计算器
+# SFCalc 粘液计算器 [魔改版]
 
 粘液科技计算器，基于john000708的SlimeCalculator
 
@@ -24,3 +24,7 @@
 Minecraft 版本: 1.16+
 
 Slimefun 版本: RC-36 以上
+
+## ⭐ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=happy66dev/SFCalc&type=Date)](https://star-history.com/#happy66dev/SFCalc&Date)
